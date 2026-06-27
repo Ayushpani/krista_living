@@ -1,281 +1,1016 @@
-<!DOCTYPE html><html class="dark scroll-smooth" lang="en"><head>
+<!DOCTYPE html>
+<html class="dark scroll-smooth" lang="en">
+<head>
 <meta charset="utf-8">
 <meta content="width=device-width, initial-scale=1.0" name="viewport">
 <title>KRISTA LIVING - Where Comfort Meets Commitment</title>
 <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-<link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;500;600&amp;family=Noto+Serif:wght@500;600;700&amp;display=swap" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@300;400;500;600;700&amp;family=Noto+Serif:ital,wght@0,500;0,600;0,700;1,500;1,600&amp;display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
 <script id="tailwind-config">
-        tailwind.config = {
-            darkMode: "class",
-            theme: {
-                extend: {
-                    "colors": {
-                        "surface-container-lowest": "#1c0902",
-                        "surface-bright": "#4d3325",
-                        "primary-fixed": "#ffdbcb",
-                        "on-primary-fixed-variant": "#633e2a",
-                        "inverse-surface": "#ffdbca",
-                        "on-primary-fixed": "#301405",
-                        "surface-container": "#301a0e",
-                        "on-primary": "#492816",
-                        "inverse-primary": "#7e5540",
-                        "on-surface-variant": "#d5c3bb",
-                        "on-secondary-fixed": "#2b1702",
-                        "surface-variant": "#482f21",
-                        "on-error-container": "#ffdad6",
-                        "surface": "#220e04",
-                        "on-tertiary": "#2f312e",
-                        "secondary": "#e7bf9c",
-                        "tertiary-container": "#262825",
-                        "tertiary-fixed-dim": "#c6c7c2",
-                        "background": "#220e04",
-                        "tertiary-fixed": "#e3e3de",
-                        "outline-variant": "#51443e",
-                        "on-secondary-container": "#d8b18f",
-                        "tertiary": "#c6c7c2",
-                        "on-tertiary-fixed-variant": "#454744",
-                        "error": "#ffb4ab",
-                        "surface-container-highest": "#482f21",
-                        "on-secondary-fixed-variant": "#5c4127",
-                        "secondary-container": "#5f4329",
-                        "on-secondary": "#432b13",
-                        "surface-dim": "#220e04",
-                        "on-error": "#690005",
-                        "on-tertiary-fixed": "#1a1c19",
-                        "primary-fixed-dim": "#f0bba1",
-                        "primary": "#f0bba1",
-                        "secondary-fixed": "#ffdcbf",
-                        "on-background": "#ffdbca",
-                        "on-primary-container": "#b3846c",
-                        "inverse-on-surface": "#432b1d",
-                        "primary-container": "#3e1f0e",
-                        "surface-container-high": "#3c2417",
-                        "on-surface": "#ffdbca",
-                        "surface-tint": "#f0bba1",
-                        "error-container": "#93000a",
-                        "secondary-fixed-dim": "#e7bf9c",
-                        "outline": "#9d8d86",
-                        "on-tertiary-container": "#8e8f8b",
-                        "surface-container-low": "#2b160a"
-                    },
-                    "borderRadius": {
-                        "DEFAULT": "0.125rem",
-                        "lg": "0.25rem",
-                        "xl": "0.5rem",
-                        "full": "0.75rem"
-                    },
-                    "spacing": {
-                        "section-padding": "120px",
-                        "unit": "8px",
-                        "margin-mobile": "24px",
-                        "margin-desktop": "80px",
-                        "gutter": "32px"
-                    },
-                    "fontFamily": {
-                        "display-lg": ["Noto Serif"],
-                        "label-lg": ["Hanken Grotesk"],
-                        "headline-lg": ["Noto Serif"],
-                        "headline-lg-mobile": ["Noto Serif"],
-                        "headline-md": ["Noto Serif"],
-                        "body-md": ["Hanken Grotesk"],
-                        "body-lg": ["Hanken Grotesk"],
-                        "label-sm": ["Hanken Grotesk"]
-                    },
-                    "fontSize": {
-                        "display-lg": ["64px", { "lineHeight": "72px", "letterSpacing": "-0.03em", "fontWeight": "700" }],
-                        "label-lg": ["14px", { "lineHeight": "20px", "letterSpacing": "0.15em", "fontWeight": "600" }],
-                        "headline-lg": ["48px", { "lineHeight": "56px", "letterSpacing": "-0.02em", "fontWeight": "600" }],
-                        "headline-lg-mobile": ["36px", { "lineHeight": "44px", "fontWeight": "600" }],
-                        "headline-md": ["32px", { "lineHeight": "40px", "letterSpacing": "-0.01em", "fontWeight": "500" }],
-                        "body-md": ["16px", { "lineHeight": "28px", "fontWeight": "400" }],
-                        "body-lg": ["20px", { "lineHeight": "32px", "fontWeight": "400" }],
-                        "label-sm": ["12px", { "lineHeight": "16px", "letterSpacing": "0.1em", "fontWeight": "500" }]
-                    }
+    tailwind.config = {
+        darkMode: "class",
+        theme: {
+            extend: {
+                "colors": {
+                    "surface-container-lowest": "#1c0902",
+                    "surface-bright": "#4d3325",
+                    "primary-fixed": "#ffdbcb",
+                    "on-primary-fixed-variant": "#633e2a",
+                    "inverse-surface": "#ffdbca",
+                    "on-primary-fixed": "#301405",
+                    "surface-container": "#301a0e",
+                    "on-primary": "#492816",
+                    "inverse-primary": "#7e5540",
+                    "on-surface-variant": "#d5c3bb",
+                    "on-secondary-fixed": "#2b1702",
+                    "surface-variant": "#482f21",
+                    "on-error-container": "#ffdad6",
+                    "surface": "#220e04",
+                    "on-tertiary": "#2f312e",
+                    "secondary": "#e7bf9c",
+                    "tertiary-container": "#262825",
+                    "tertiary-fixed-dim": "#c6c7c2",
+                    "background": "#220e04",
+                    "tertiary-fixed": "#e3e3de",
+                    "outline-variant": "#51443e",
+                    "on-secondary-container": "#d8b18f",
+                    "tertiary": "#c6c7c2",
+                    "on-tertiary-fixed-variant": "#454744",
+                    "error": "#ffb4ab",
+                    "surface-container-highest": "#482f21",
+                    "on-secondary-fixed-variant": "#5c4127",
+                    "secondary-container": "#5f4329",
+                    "on-secondary": "#432b13",
+                    "surface-dim": "#220e04",
+                    "on-error": "#690005",
+                    "on-tertiary-fixed": "#1a1c19",
+                    "primary-fixed-dim": "#f0bba1",
+                    "primary": "#f0bba1",
+                    "secondary-fixed": "#ffdcbf",
+                    "on-background": "#ffdbca",
+                    "on-primary-container": "#b3846c",
+                    "inverse-on-surface": "#432b1d",
+                    "primary-container": "#3e1f0e",
+                    "surface-container-high": "#3c2417",
+                    "on-surface": "#ffdbca",
+                    "surface-tint": "#f0bba1",
+                    "error-container": "#93000a",
+                    "secondary-fixed-dim": "#e7bf9c",
+                    "outline": "#9d8d86",
+                    "on-tertiary-container": "#8e8f8b",
+                    "surface-container-low": "#2b160a"
+                },
+                "borderRadius": {
+                    "DEFAULT": "0.125rem",
+                    "lg": "0.25rem",
+                    "xl": "0.5rem",
+                    "full": "0.75rem"
+                },
+                "spacing": {
+                    "section-padding": "120px",
+                    "unit": "8px",
+                    "margin-mobile": "24px",
+                    "margin-desktop": "80px",
+                    "gutter": "32px"
+                },
+                "fontFamily": {
+                    "display-lg": ["Noto Serif"],
+                    "label-lg": ["Hanken Grotesk"],
+                    "headline-lg": ["Noto Serif"],
+                    "headline-lg-mobile": ["Noto Serif"],
+                    "headline-md": ["Noto Serif"],
+                    "body-md": ["Hanken Grotesk"],
+                    "body-lg": ["Hanken Grotesk"],
+                    "label-sm": ["Hanken Grotesk"]
+                },
+                "fontSize": {
+                    "display-lg": ["64px", { "lineHeight": "72px", "letterSpacing": "-0.03em", "fontWeight": "700" }],
+                    "label-lg": ["14px", { "lineHeight": "20px", "letterSpacing": "0.15em", "fontWeight": "600" }],
+                    "headline-lg": ["48px", { "lineHeight": "56px", "letterSpacing": "-0.02em", "fontWeight": "600" }],
+                    "headline-lg-mobile": ["36px", { "lineHeight": "44px", "fontWeight": "600" }],
+                    "headline-md": ["32px", { "lineHeight": "40px", "letterSpacing": "-0.01em", "fontWeight": "500" }],
+                    "body-md": ["16px", { "lineHeight": "28px", "fontWeight": "400" }],
+                    "body-lg": ["20px", { "lineHeight": "32px", "fontWeight": "400" }],
+                    "label-sm": ["12px", { "lineHeight": "16px", "letterSpacing": "0.1em", "fontWeight": "500" }]
                 }
             }
         }
-    </script>
+    }
+</script>
 <style>
-        html { scroll-behavior: smooth; }
-        body { background-color: theme('colors.background'); color: theme('colors.on-background'); }
-        .glass-panel { background: rgba(43, 22, 10, 0.85); backdrop-filter: blur(16px); border: 1px solid rgba(197, 160, 127, 0.15); box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5); }
-    </style>
+    html { scroll-behavior: smooth; }
+    
+    /* Hardcoded base colors to prevent CSS variable failing */
+    body { 
+        background-color: #220e04; 
+        color: #ffdbca;
+        overflow-x: hidden;
+        font-family: 'Hanken Grotesk', sans-serif;
+    }
+    
+    .font-serif { font-family: 'Noto Serif', serif; }
+    .font-sans { font-family: 'Hanken Grotesk', sans-serif; }
+
+    .glass-panel { 
+        background: rgba(28, 9, 2, 0.8); 
+        backdrop-filter: blur(20px); 
+        border: 1px solid rgba(197, 160, 127, 0.15); 
+        box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.8); 
+    }
+
+    /* Crazy Rich Typography */
+    .crazy-outline {
+        -webkit-text-stroke: 1px rgba(240, 187, 161, 0.4);
+        color: transparent;
+    }
+    .text-stroke-thin {
+        -webkit-text-stroke: 0.5px rgba(240, 187, 161, 0.3);
+        color: transparent;
+    }
+
+    /* ===== Scroll Progress Bar ===== */
+    #scroll-progress {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 0%;
+        height: 2px;
+        background: #f0bba1;
+        z-index: 100;
+        transition: width 0.1s ease-out;
+    }
+
+    /* ===== Loading Screen ===== */
+    #loader {
+        position: fixed;
+        inset: 0;
+        background: #1c0902;
+        z-index: 9999;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        gap: 24px;
+        transition: opacity 0.8s ease, visibility 0.8s ease;
+    }
+    #loader.is-hidden {
+        opacity: 0;
+        visibility: hidden;
+        pointer-events: none;
+    }
+    .loader-text {
+        font-family: 'Noto Serif', serif;
+        font-size: 32px;
+        font-weight: 600;
+        letter-spacing: 0.3em;
+        color: #f0bba1;
+        text-transform: uppercase;
+    }
+    .loader-bar {
+        width: 200px;
+        height: 1px;
+        background: rgba(240, 187, 161, 0.2);
+        overflow: hidden;
+    }
+    .loader-bar::after {
+        content: '';
+        display: block;
+        width: 40%;
+        height: 100%;
+        background: #f0bba1;
+        animation: loading-slide 1.5s ease-in-out infinite;
+    }
+    @keyframes loading-slide {
+        0% { transform: translateX(-100%); }
+        100% { transform: translateX(350%); }
+    }
+
+    /* ===== Reveal Animations ===== */
+    .reveal {
+        opacity: 0;
+        transform: translateY(80px);
+        transition: opacity 1.2s cubic-bezier(0.16, 1, 0.3, 1), transform 1.2s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+    .reveal.active { opacity: 1; transform: translateY(0); }
+    
+    .reveal-left {
+        opacity: 0;
+        transform: translateX(-100px);
+        transition: opacity 1.2s cubic-bezier(0.16, 1, 0.3, 1), transform 1.2s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+    .reveal-left.active { opacity: 1; transform: translateX(0); }
+    
+    .reveal-right {
+        opacity: 0;
+        transform: translateX(100px);
+        transition: opacity 1.2s cubic-bezier(0.16, 1, 0.3, 1), transform 1.2s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+    .reveal-right.active { opacity: 1; transform: translateX(0); }
+    
+    .reveal-scale {
+        opacity: 0;
+        transform: scale(0.9);
+        transition: opacity 1.2s cubic-bezier(0.16, 1, 0.3, 1), transform 1.2s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+    .reveal-scale.active { opacity: 1; transform: scale(1); }
+
+    .stagger-item {
+        opacity: 0;
+        transform: translateY(40px);
+        transition: opacity 0.8s cubic-bezier(0.16, 1, 0.3, 1), transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+    .stagger-item.active { opacity: 1; transform: translateY(0); }
+
+    /* ===== Hero Text Animation ===== */
+    .hero-fade {
+        opacity: 0;
+        transform: translateY(60px);
+        animation: heroFadeIn 1.5s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+    }
+    .hero-fade-1 { animation-delay: 0.3s; }
+    .hero-fade-2 { animation-delay: 0.5s; }
+    .hero-fade-3 { animation-delay: 0.7s; }
+    .hero-fade-4 { animation-delay: 0.9s; }
+    .hero-fade-5 { animation-delay: 1.1s; }
+    @keyframes heroFadeIn {
+        to { opacity: 1; transform: translateY(0); }
+    }
+
+    /* ===== Parallax ===== */
+    .parallax-bg { will-change: transform; }
+
+    /* ===== Nav Shrink ===== */
+    .nav-shrink {
+        height: 72px !important;
+        background: rgba(28, 9, 2, 0.95) !important;
+        box-shadow: 0 10px 30px -10px rgba(0, 0, 0, 0.8);
+    }
+
+    /* ===== Magnetic Button Effect ===== */
+    .magnetic-btn {
+        position: relative;
+        overflow: hidden;
+        transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+    .magnetic-btn::before {
+        content: '';
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 0;
+        height: 0;
+        border-radius: 50%;
+        background: rgba(255, 255, 255, 0.05);
+        transform: translate(-50%, -50%);
+        transition: width 0.6s ease, height 0.6s ease;
+        z-index: 0;
+    }
+    .magnetic-btn:hover::before { width: 400px; height: 400px; }
+    .magnetic-btn > * { position: relative; z-index: 1; }
+
+    /* ===== Bento Card ===== */
+    .bento-card {
+        position: relative;
+        transition: transform 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+    .bento-card:hover { transform: translateY(-8px); }
+
+    /* ===== Mobile Menu ===== */
+    #mobile-menu {
+        position: fixed;
+        top: 0;
+        right: -100%;
+        width: 100%;
+        max-width: 400px;
+        height: 100vh;
+        background: #1c0902;
+        z-index: 60;
+        transition: right 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+        padding: 100px 40px 40px;
+        border-left: 1px solid rgba(197, 160, 127, 0.15);
+    }
+    #mobile-menu.open { right: 0; }
+    #mobile-menu-overlay {
+        position: fixed;
+        inset: 0;
+        background: rgba(0, 0, 0, 0.6);
+        backdrop-filter: blur(4px);
+        z-index: 55;
+        opacity: 0;
+        visibility: hidden;
+        transition: opacity 0.4s ease, visibility 0.4s ease;
+    }
+    #mobile-menu-overlay.open { opacity: 1; visibility: visible; }
+
+    /* ===== Back to Top ===== */
+    #back-to-top {
+        position: fixed;
+        bottom: 32px;
+        right: 32px;
+        width: 56px;
+        height: 56px;
+        border: 1px solid #f0bba1;
+        background: transparent;
+        color: #f0bba1;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        z-index: 50;
+        opacity: 0;
+        visibility: hidden;
+        transform: translateY(20px);
+        transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+    #back-to-top.visible { opacity: 1; visibility: visible; transform: translateY(0); }
+    #back-to-top:hover { background: #f0bba1; color: #1c0902; }
+
+    /* ===== Custom Scrollbar ===== */
+    ::-webkit-scrollbar { width: 8px; }
+    ::-webkit-scrollbar-track { background: #1c0902; }
+    ::-webkit-scrollbar-thumb { background: #5f4329; }
+    ::-webkit-scrollbar-thumb:hover { background: #f0bba1; }
+
+    /* ===== Active Nav Link ===== */
+    .nav-link.active { color: #f0bba1 !important; }
+    .nav-link.active::after {
+        content: '';
+        display: block;
+        width: 100%;
+        height: 1px;
+        background: #f0bba1;
+        margin-top: 4px;
+        animation: slideIn 0.3s ease;
+    }
+    @keyframes slideIn { from { transform: scaleX(0); } to { transform: scaleX(1); } }
+
+    /* ===== Scroll Down Indicator ===== */
+    .scroll-indicator {
+        position: absolute;
+        bottom: 40px;
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: 20;
+        animation: scrollBounce 2s ease-in-out infinite;
+    }
+    @keyframes scrollBounce {
+        0%, 100% { transform: translateX(-50%) translateY(0); }
+        50% { transform: translateX(-50%) translateY(10px); }
+    }
+
+    /* ===== Image Reveal ===== */
+    .img-reveal { position: relative; overflow: hidden; }
+    .img-reveal::after {
+        content: '';
+        position: absolute;
+        inset: 0;
+        background: #1c0902;
+        transform: scaleX(1);
+        transform-origin: right;
+        transition: transform 1.2s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+    .img-reveal.active::after { transform: scaleX(0); }
+
+    /* ===== Smooth Scroll Offset ===== */
+    section[id] { scroll-margin-top: 80px; }
+
+    /* ===== Form Highlight on Auto Scroll ===== */
+    .form-highlight {
+        animation: formFlash 2s ease-in-out;
+    }
+    @keyframes formFlash {
+        0%, 100% { border-color: rgba(197, 160, 127, 0.15); box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.8); }
+        50% { border-color: #f0bba1; box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.8), 0 0 0 2px rgba(240, 187, 161, 0.3); }
+    }
+
+    /* ===== Responsive Adjustments ===== */
+    @media (max-width: 768px) {
+        .hero-parallax { background-attachment: scroll !important; }
+        #back-to-top { bottom: 20px; right: 20px; width: 48px; height: 48px; }
+    }
+
+    /* ===== Form Input Focus ===== */
+    .form-input:focus { border-bottom-color: #f0bba1 !important; }
+
+    /* ===== Divider Line Animation ===== */
+    .divider-line { position: relative; overflow: hidden; }
+    .divider-line::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(90deg, transparent, #f0bba1, transparent);
+        transform: translateX(-100%);
+        transition: transform 1.5s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+    .divider-line.active::after { transform: translateX(100%); }
+</style>
 </head>
 <body class="antialiased selection:bg-primary-container selection:text-on-primary-container">
+
+<!-- Loading Screen -->
+<div id="loader">
+    <div class="loader-text">Krista Living</div>
+    <div class="loader-bar"></div>
+</div>
+
+<!-- Scroll Progress Bar -->
+<div id="scroll-progress"></div>
+
 <!-- TopNavBar -->
-<header class="fixed top-0 z-50 bg-surface/90 backdrop-blur-md dark:bg-surface/90 border-b border-outline-variant/30 w-full transition-all duration-300">
+<header id="navbar" class="fixed top-0 z-50 bg-surface/90 backdrop-blur-md dark:bg-surface/90 border-b border-outline-variant/30 w-full transition-all duration-300">
 <div class="flex justify-between items-center h-24 w-full px-margin-mobile md:px-margin-desktop max-w-[1440px] mx-auto">
-<div class="font-display-lg text-headline-md font-bold tracking-[0.2em] uppercase text-on-surface dark:text-primary-fixed">
-                KRISTA LIVING
-            </div>
+<div class="font-serif text-2xl font-bold tracking-[0.2em] uppercase text-on-surface dark:text-primary-fixed cursor-pointer" onclick="scrollToSection('home')">
+            KRISTA LIVING
+        </div>
 <nav class="hidden lg:flex items-center gap-10">
-<a class="font-label-lg text-label-lg uppercase tracking-widest text-on-surface-variant dark:text-on-surface-variant hover:text-primary transition-colors duration-300" href="#manufacturing">Manufacturing</a>
-<a class="font-label-lg text-label-lg uppercase tracking-widest text-on-surface-variant dark:text-on-surface-variant hover:text-primary transition-colors duration-300" href="#services">Services</a>
-<a class="font-label-lg text-label-lg uppercase tracking-widest text-on-surface-variant dark:text-on-surface-variant hover:text-primary transition-colors duration-300" href="#gallery">Gallery</a>
-<a class="font-label-lg text-label-lg uppercase tracking-widest text-on-surface-variant dark:text-on-surface-variant hover:text-primary transition-colors duration-300" href="#about">About</a>
+<a class="nav-link font-sans text-sm uppercase tracking-[0.15em] text-on-surface-variant dark:text-on-surface-variant hover:text-primary transition-colors duration-300" href="#manufacturing" data-section="manufacturing">Manufacturing</a>
+<a class="nav-link font-sans text-sm uppercase tracking-[0.15em] text-on-surface-variant dark:text-on-surface-variant hover:text-primary transition-colors duration-300" href="#gallery" data-section="gallery">Gallery</a>
+<a class="nav-link font-sans text-sm uppercase tracking-[0.15em] text-on-surface-variant dark:text-on-surface-variant hover:text-primary transition-colors duration-300" href="#services" data-section="services">Services</a>
+<a class="nav-link font-sans text-sm uppercase tracking-[0.15em] text-on-surface-variant dark:text-on-surface-variant hover:text-primary transition-colors duration-300" href="#about" data-section="about">About</a>
 </nav>
-<a class="hidden lg:inline-flex items-center justify-center px-8 py-3 bg-primary text-on-primary font-label-lg text-label-lg rounded-full hover:bg-primary-fixed-dim transition-colors duration-300 ease-in-out" href="#contact">
-                ENQUIRE NOW
-            </a>
-<button class="lg:hidden text-on-surface">
-<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 0;">menu</span>
+<a class="hidden lg:inline-flex magnetic-btn items-center justify-center px-8 py-3 bg-primary text-on-primary font-sans text-sm uppercase tracking-[0.15em] rounded-full hover:bg-primary-fixed-dim transition-colors duration-300 ease-in-out cursor-pointer" onclick="scrollToForm()">
+            Enquire Now
+        </a>
+<button class="lg:hidden text-on-surface" id="menu-toggle">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 0; font-size: 32px;">menu</span>
 </button>
 </div>
 </header>
+
+<!-- Mobile Menu Overlay -->
+<div id="mobile-menu-overlay"></div>
+
+<!-- Mobile Menu -->
+<div id="mobile-menu">
+<button class="absolute top-8 right-8 text-on-surface" id="menu-close">
+<span class="material-symbols-outlined" style="font-size: 32px;">close</span>
+</button>
+<nav class="flex flex-col gap-8 mt-12">
+<a class="font-serif text-3xl text-primary-fixed hover:text-primary transition-colors duration-300" href="#manufacturing" onclick="closeMobileMenu()">Manufacturing</a>
+<a class="font-serif text-3xl text-primary-fixed hover:text-primary transition-colors duration-300" href="#gallery" onclick="closeMobileMenu()">Gallery</a>
+<a class="font-serif text-3xl text-primary-fixed hover:text-primary transition-colors duration-300" href="#services" onclick="closeMobileMenu()">Services</a>
+<a class="font-serif text-3xl text-primary-fixed hover:text-primary transition-colors duration-300" href="#about" onclick="closeMobileMenu()">About</a>
+<a class="mt-8 inline-flex items-center justify-center px-8 py-4 bg-primary text-on-primary font-sans text-sm uppercase tracking-widest rounded-full hover:bg-primary-fixed-dim transition-colors duration-300" onclick="closeMobileMenu(); scrollToForm();">Enquire Now</a>
+</nav>
+</div>
+
 <main>
 <!-- Hero Section -->
-<section class="relative w-full min-h-[90vh] flex items-center justify-center overflow-hidden pt-24" id="home">
-<div class="absolute inset-0 z-0 bg-cover bg-center" data-alt="A luxurious, modern living room interior featuring deep rich wood paneling on the walls, a plush beige sofa with textured cushions, and warm ambient lighting from elegant lamps and recessed ceiling lights. A large dark coffee table sits on a soft textured rug. High-end, sophisticated aesthetic." style="background-image: url(&quot;https://lh3.googleusercontent.com/aida-public/AB6AXuDAMC6VonOBLvtZgu1dxmZe4r2yKeicobtq4eyjWQikBgJx0Xjee9NBWi89JQAREkylhoAB1vX3OFZnC3w673LJeumfXK6lMe8Er_wHPPfTFnye7oiNb40ZvXUtSPqE0NFxmhRDmiobeANchErwLnHi4ewfJ7jBwmevsioojV7Bqgpu7TXyiPg95lOsD2qSdakuehagRdt6P1HViJJxmvml22ZTHJyyeDEZyNm0yQr6Ve7jbP0SZsSJz5bX0mVtGXh7URvlH5hV5mWP&quot;); background-attachment: fixed; background-size: cover; background-position: center center;"></div>
+<section class="relative w-full min-h-[100vh] flex items-center justify-center overflow-hidden pt-24" id="home">
+<div class="absolute inset-0 z-0 bg-cover bg-center parallax-bg hero-parallax" data-alt="A luxurious, modern living room interior featuring deep rich wood paneling on the walls, a plush beige sofa with textured cushions, and warm ambient lighting from elegant lamps and recessed ceiling lights. A large dark coffee table sits on a soft textured rug. High-end, sophisticated aesthetic." style="background-image: url(&quot;https://lh3.googleusercontent.com/aida-public/AB6AXuDAMC6VonOBLvtZgu1dxmZe4r2yKeicobtq4eyjWQikBgJx0Xjee9NBWi89JQAREkylhoAB1vX3OFZnC3w673LJeumfXK6lMe8Er_wHPPfTFnye7oiNb40ZvXUtSPqE0NFxmhRDmiobeANchErwLnHi4ewfJ7jBwmevsioojV7Bqgpu7TXyiPg95lOsD2qSdakuehagRdt6P1HViJJxmvml22ZTHJyyeDEZyNm0yQr6Ve7jbP0SZsSJz5bX0mVtGXh7URvlH5hV5mWP&quot;); background-attachment: fixed; background-size: cover; background-position: center center;"></div>
 <div class="absolute inset-0 bg-gradient-to-r from-surface-container-lowest via-surface-container-lowest/80 to-surface-container-lowest/30 z-10"></div>
+<div class="absolute inset-0 bg-gradient-to-t from-surface via-transparent to-transparent z-10"></div>
 <div class="relative z-20 w-full max-w-[1440px] mx-auto px-margin-mobile md:px-margin-desktop py-section-padding">
-<div class="max-w-3xl">
-<div class="inline-flex items-center gap-3 px-5 py-2 border border-secondary/50 rounded-full mb-10 bg-surface/30 backdrop-blur-sm">
-<span class="font-label-sm text-label-sm uppercase tracking-[0.2em] text-secondary">Modular | Furniture | Factory</span>
+<div class="max-w-4xl">
+<div class="hero-fade hero-fade-1 inline-flex items-center gap-3 px-5 py-2 border border-secondary/50 rounded-full mb-12 bg-surface/30 backdrop-blur-sm">
+<span class="font-sans text-xs uppercase tracking-[0.2em] text-secondary">Modular | Furniture | Factory</span>
 </div>
-<h1 class="font-display-lg text-display-lg text-primary-fixed mb-8 leading-tight">In-House Modular Furniture Manufacturing</h1>
-<p class="font-body-lg text-body-lg text-on-surface-variant mb-12 max-w-2xl leading-relaxed text-lg">Fully equipped factory with routers, edge banders, spray area &amp; assembly lines. We manufacture customised modular kitchens, wardrobes &amp; storage units with premium finishes.</p>
-<div class="flex flex-wrap gap-6">
-<a class="px-10 py-5 bg-primary text-on-primary font-label-lg text-label-lg uppercase tracking-widest rounded-full hover:bg-primary-fixed-dim transition-all duration-300 text-center" href="#contact">Book Free Consultation</a>
-<a class="px-10 py-5 border border-secondary/50 text-secondary font-label-lg text-label-lg uppercase tracking-widest rounded-full hover:bg-surface-container-low transition-all duration-300 text-center" href="#manufacturing">View Capabilities</a>
+<h1 class="hero-fade hero-fade-2 font-serif text-5xl md:text-8xl lg:text-9xl text-primary-fixed mb-8 leading-[0.95] tracking-tight">
+    In-House<br>
+    <span class="italic font-light">Modular</span> <span class="crazy-outline">Furniture</span><br>
+    Manufacturing
+</h1>
+<p class="hero-fade hero-fade-3 font-sans text-lg md:text-xl text-on-surface-variant mb-12 max-w-2xl leading-relaxed font-light">Fully equipped factory with routers, edge banders, spray area &amp; assembly lines. We manufacture customised modular kitchens, wardrobes &amp; storage units with premium finishes.</p>
+<div class="hero-fade hero-fade-4 flex flex-wrap gap-6">
+<a class="magnetic-btn px-10 py-5 bg-primary text-on-primary font-sans text-sm uppercase tracking-[0.15em] rounded-full hover:bg-primary-fixed-dim transition-all duration-300 text-center cursor-pointer" onclick="scrollToForm()">Book Free Consultation</a>
+<a class="magnetic-btn px-10 py-5 border border-secondary/50 text-secondary font-sans text-sm uppercase tracking-[0.15em] rounded-full hover:bg-surface-container-low transition-all duration-300 text-center cursor-pointer" onclick="scrollToSection('manufacturing')">View Capabilities</a>
 </div>
+</div>
+</div>
+<!-- Scroll Indicator -->
+<div class="scroll-indicator hidden md:flex flex-col items-center gap-3">
+<span class="font-sans text-xs uppercase tracking-[0.2em] text-secondary/70">Scroll</span>
+<div class="w-px h-12 bg-gradient-to-b from-secondary/70 to-transparent"></div>
+<span class="material-symbols-outlined text-secondary/70" style="font-size: 20px;">keyboard_arrow_down</span>
+</div>
+</section>
+
+<!-- Stats Bar -->
+<section class="w-full bg-surface-container-lowest border-y border-outline-variant/20 py-24">
+<div class="max-w-[1440px] mx-auto px-margin-mobile md:px-margin-desktop grid grid-cols-2 md:grid-cols-4 gap-8 md:gap-12">
+<div class="reveal text-left stagger-item">
+<div class="counter font-serif text-6xl md:text-8xl font-thin text-primary mb-2" data-target="500">0</div>
+<div class="font-sans text-xs uppercase tracking-[0.2em] text-on-surface-variant">Projects Delivered</div>
+</div>
+<div class="reveal text-left stagger-item">
+<div class="counter font-serif text-6xl md:text-8xl font-thin text-primary mb-2" data-target="12">0</div>
+<div class="font-sans text-xs uppercase tracking-[0.2em] text-on-surface-variant">Years Experience</div>
+</div>
+<div class="reveal text-left stagger-item">
+<div class="counter font-serif text-6xl md:text-8xl font-thin text-primary mb-2" data-target="25000">0</div>
+<div class="font-sans text-xs uppercase tracking-[0.2em] text-on-surface-variant">Sq Ft Factory</div>
+</div>
+<div class="reveal text-left stagger-item">
+<div class="counter font-serif text-6xl md:text-8xl font-thin text-primary mb-2" data-target="100">0</div>
+<div class="font-sans text-xs uppercase tracking-[0.2em] text-on-surface-variant">% In-House</div>
 </div>
 </div>
 </section>
+
 <!-- Capabilities Bento Grid -->
-<section class="w-full bg-surface py-section-padding px-margin-mobile md:px-margin-desktop relative transition-all duration-1000 ease-in-out" id="manufacturing">
-<div class="absolute top-0 left-1/2 -translate-x-1/2 w-full max-w-3xl h-px bg-gradient-to-r from-transparent via-outline-variant to-transparent"></div>
+<section class="w-full bg-surface py-section-padding px-margin-mobile md:px-margin-desktop relative" id="manufacturing">
+<div class="divider-line absolute top-0 left-1/2 -translate-x-1/2 w-full max-w-3xl h-px bg-gradient-to-r from-transparent via-outline-variant to-transparent"></div>
 <div class="max-w-[1440px] mx-auto">
 <div class="text-center mb-20">
-<h2 class="font-headline-lg text-headline-lg md:text-headline-lg text-primary mb-6">Our Manufacturing Capabilities</h2>
-<p class="font-body-lg text-body-lg text-on-surface-variant max-w-3xl mx-auto text-lg">Precision engineering meets artisanal craftsmanship in our state-of-the-art facility.</p>
+<h2 class="reveal font-serif text-5xl md:text-7xl text-primary mb-6 tracking-tight">Our <span class="italic font-light">Capabilities</span></h2>
+<p class="reveal font-sans text-lg text-on-surface-variant max-w-3xl mx-auto font-light">Precision engineering meets artisanal craftsmanship in our state-of-the-art facility.</p>
 </div>
 <div class="grid grid-cols-1 md:grid-cols-12 gap-gutter">
 <!-- Precision Cutting -->
-<div class="md:col-span-8 group relative overflow-hidden rounded-2xl border border-outline-variant/30 bg-surface-container-low p-10 min-h-[480px] flex flex-col justify-end">
+<div class="reveal md:col-span-8 bento-card group relative overflow-hidden rounded-xl border border-outline-variant/30 bg-surface-container-low p-10 min-h-[480px] flex flex-col justify-end">
 <div class="absolute inset-0 z-0 transition-transform duration-1000 group-hover:scale-105" data-alt="A pristine, modern furniture manufacturing factory floor showing a high-tech automated precision cutting machine working on large sheets of rich wood veneer. Industrial, clean, brightly lit with focused task lighting." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDprkzW3q9_2YVu5Cw_yntfHeGwDSL9l1lxFqZTLy3_3NXWtDNZl2HpIB0qpc2E4mskiSBorowlEpS9ExTS-mnq3VggnvB3pg9h2mZiS1rIAX2_4xGtkljnIntsRlIhOyCp6SvICo9PvPFGI2E1q928OMusqFZqKvsjM3OE6krYWIWlaRXA7vjxJ2r6e5dDHy0fegar_aDaw5omejjrDhZ8srJqa8fy_rHzDw7mpwB3lneT_kOsVJDlBFR8V9wPDfQkk8kZSjR3YvC8'); background-size: cover; background-position: center;"></div>
 <div class="absolute inset-0 bg-gradient-to-t from-surface-container-lowest via-surface-container-lowest/80 to-transparent z-10"></div>
+<div class="absolute top-6 right-8 z-20 font-serif text-8xl text-stroke-thin">01</div>
 <div class="relative z-20 max-w-lg">
-<h3 class="font-headline-md text-headline-md text-primary-fixed mb-4">Precision Cutting</h3>
-<p class="font-body-md text-body-lg text-on-surface-variant/90 leading-relaxed">State-of-the-art cutting machines for precision cutting of MDF, plywood &amp; HDHMR boards. Accurate to 0.5mm for perfect modular fits.</p>
+<h3 class="font-serif text-3xl text-primary-fixed mb-4">Precision Cutting</h3>
+<p class="font-sans text-base text-on-surface-variant/90 leading-relaxed font-light">State-of-the-art cutting machines for precision cutting of MDF, plywood &amp; HDHMR boards. Accurate to 0.5mm for perfect modular fits.</p>
 </div>
 </div>
 <!-- Edge Banding -->
-<div class="md:col-span-4 rounded-2xl border border-outline-variant/30 bg-surface-container-low/50 p-10 flex flex-col justify-between hover:bg-surface-container-low transition-colors duration-500">
-<div class="w-20 h-20 rounded-full bg-primary-container flex items-center justify-center mb-8 border border-primary/20">
-<span class="material-symbols-outlined text-primary text-4xl">precision_manufacturing</span>
-</div>
-<div>
-<h3 class="font-headline-md text-headline-md text-primary-fixed mb-4">Edge Banding</h3>
-<p class="font-body-md text-body-md text-on-surface-variant/90 leading-relaxed">In-house edge banding with PVC &amp; ABS strips. Multiple finish options including matte, glossy, textured &amp; wood grain.</p>
+<div class="reveal bento-card md:col-span-4 rounded-xl border border-outline-variant/30 bg-surface-container-low/50 p-10 flex flex-col justify-between hover:bg-surface-container-low transition-colors duration-500 relative overflow-hidden">
+<div class="absolute top-6 right-8 font-serif text-8xl text-stroke-thin">02</div>
+<div class="relative z-10">
+<h3 class="font-serif text-3xl text-primary-fixed mb-4">Edge Banding</h3>
+<p class="font-sans text-base text-on-surface-variant/90 leading-relaxed font-light">In-house edge banding with PVC &amp; ABS strips. Multiple finish options including matte, glossy, textured &amp; wood grain.</p>
 </div>
 </div>
 <!-- Spray Finishing -->
-<div class="md:col-span-4 rounded-2xl border border-outline-variant/30 bg-surface-container-low/50 p-10 flex flex-col justify-between hover:bg-surface-container-low transition-colors duration-500">
-<div class="w-20 h-20 rounded-full bg-primary-container flex items-center justify-center mb-8 border border-primary/20">
-<span class="material-symbols-outlined text-primary text-4xl">format_paint</span>
-</div>
-<div>
-<h3 class="font-headline-md text-headline-md text-primary-fixed mb-4">Custom Spray Finishing</h3>
-<p class="font-body-md text-body-md text-on-surface-variant/90 leading-relaxed">Premium spray for custom PU &amp; duco finishes. Any colour, any texture - fully customised to your design.</p>
+<div class="reveal bento-card md:col-span-4 rounded-xl border border-outline-variant/30 bg-surface-container-low/50 p-10 flex flex-col justify-between hover:bg-surface-container-low transition-colors duration-500 relative overflow-hidden">
+<div class="absolute top-6 right-8 font-serif text-8xl text-stroke-thin">03</div>
+<div class="relative z-10">
+<h3 class="font-serif text-3xl text-primary-fixed mb-4">Spray Finishing</h3>
+<p class="font-sans text-base text-on-surface-variant/90 leading-relaxed font-light">Premium spray for custom PU &amp; duco finishes. Any colour, any texture - fully customised to your design.</p>
 </div>
 </div>
 <!-- Automatic Furniture -->
-<div class="md:col-span-8 group relative overflow-hidden rounded-2xl border border-outline-variant/30 bg-surface-container-low p-10 min-h-[400px] flex flex-col justify-end">
+<div class="reveal bento-card md:col-span-8 group relative overflow-hidden rounded-xl border border-outline-variant/30 bg-surface-container-low p-10 min-h-[400px] flex flex-col justify-end">
 <div class="absolute inset-0 z-0 transition-transform duration-1000 group-hover:scale-105" data-alt="Close up of automated manufacturing equipment assembling a piece of premium wooden furniture. Sparks of precision tools, warm industrial lighting, highlighting the high quality wood grain and flawless joints." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBr_l9sW9Vtz4q_XPmgFwoMLUtbqNbAkPtOclQ8Bwe846S_s7YqYV6nLIQW6f0TGb8n1G1lIRJgbsMmeaW1TB-CtxUGk8pOhRRpWRzSS-7L2JbbPACDduqK0A1z_fLn-6PW0nqZnZGynw43bH3tgWOj0t-KagUot3Zu9ekc82rvVhiX1wU7KxCfmymsiTrK7EvhOACTakIXmJFcI0k_47Wlhtsof_ezf6gFW_JI3S411axCzj4ab1NlZOth-sirgKkBVAzNVMbQXcf-'); background-size: cover; background-position: center;"></div>
 <div class="absolute inset-0 bg-gradient-to-t from-surface-container-lowest via-surface-container-lowest/80 to-transparent z-10"></div>
+<div class="absolute top-6 right-8 z-20 font-serif text-8xl text-stroke-thin">04</div>
 <div class="relative z-20 max-w-lg">
-<h3 class="font-headline-md text-headline-md text-primary-fixed mb-4">Automatic Furniture</h3>
-<p class="font-body-md text-body-lg text-on-surface-variant/90 leading-relaxed">Capabilities of building automatic or resourceful furniture in-house. Customised designs and space-saving solutions delivered on TIME.</p>
+<h3 class="font-serif text-3xl text-primary-fixed mb-4">Automatic Furniture</h3>
+<p class="font-sans text-base text-on-surface-variant/90 leading-relaxed font-light">Capabilities of building automatic or resourceful furniture in-house. Customised designs and space-saving solutions delivered on TIME.</p>
 </div>
 </div>
 </div>
 </div>
 </section>
-<!-- Services Section (List style with Image overlay) -->
-<section class="relative w-full py-section-padding overflow-hidden transition-all duration-1000 ease-in-out" id="services">
-<div class="absolute top-0 left-1/2 -translate-x-1/2 w-full max-w-3xl h-px bg-gradient-to-r from-transparent via-outline-variant to-transparent z-30"></div>
-<div class="absolute inset-0 z-0 opacity-30 bg-cover bg-center" data-alt="A luxurious modern kitchen interior featuring rich walnut wood cabinetry, white marble countertops with subtle grey veining, and sleek brass pendant lights hanging over a central island. Warm, sophisticated lighting." style="background-image: url(&quot;https://lh3.googleusercontent.com/aida-public/AB6AXuAhG_GBKBvHCLSsRUujQVR--b_42U1mMFaV4SF8xbZLG62lzXFozrFQ9ldSL67_IZZOXhFBx_BWE_9Rp9taQuXOlZJIq_PyCY5yJDTBxDMVA5mkBEHUNau5oFupwpPYz0dmRgFS2uLh76jQLWjCZ1LsyRg7jFRXvLk-Vyij_0L2rvMCt3jvtTBYo8krkvG2hPliGTYxqIOceDr7J-RXADJFZs5rccqPmINMRQSB5sftDEcGiqLwwSXcYYqMCl4ITRP98RCnSHbMR38i&quot;); background-size: cover; background-position: center center; background-attachment: fixed;"></div>
-<div class="absolute inset-0 bg-gradient-to-b from-surface-container-lowest via-surface-container-lowest/90 to-surface-container-lowest z-10"></div>
-<div class="relative z-20 max-w-[1440px] mx-auto px-margin-mobile md:px-margin-desktop grid grid-cols-1 lg:grid-cols-2 gap-20 items-center">
-<div class="pr-0 lg:pr-10">
-<h2 class="font-headline-lg text-headline-lg md:text-headline-lg text-primary mb-12">Our Offerings</h2>
-<div class="mb-16">
-<h3 class="font-headline-md text-headline-md text-secondary mb-8 pb-4 border-b border-outline-variant/30">Interior Design Services</h3>
-<ul class="space-y-6">
-<li class="font-label-lg text-body-lg tracking-wider text-on-surface-variant hover:text-primary transition-all duration-300 flex items-center gap-6 group cursor-pointer">
-<span class="w-12 h-px bg-outline-variant group-hover:bg-primary group-hover:w-16 transition-all duration-300"></span> Space Planning
-                            </li>
-<li class="font-label-lg text-body-lg tracking-wider text-on-surface-variant hover:text-primary transition-all duration-300 flex items-center gap-6 group cursor-pointer">
-<span class="w-12 h-px bg-outline-variant group-hover:bg-primary group-hover:w-16 transition-all duration-300"></span> Concept Design
-                            </li>
-<li class="font-label-lg text-body-lg tracking-wider text-on-surface-variant hover:text-primary transition-all duration-300 flex items-center gap-6 group cursor-pointer">
-<span class="w-12 h-px bg-outline-variant group-hover:bg-primary group-hover:w-16 transition-all duration-300"></span> 3D Visualization
-                            </li>
-<li class="font-label-lg text-body-lg tracking-wider text-on-surface-variant hover:text-primary transition-all duration-300 flex items-center gap-6 group cursor-pointer">
-<span class="w-12 h-px bg-outline-variant group-hover:bg-primary group-hover:w-16 transition-all duration-300"></span> Material Selection
-                            </li>
-</ul>
-</div>
-<div>
-<h3 class="font-headline-md text-headline-md text-secondary mb-8 pb-4 border-b border-outline-variant/30">Design-to-Delivery Process</h3>
-<ul class="space-y-6">
-<li class="font-label-lg text-body-lg tracking-wider text-on-surface-variant hover:text-primary transition-all duration-300 flex items-center gap-6 group cursor-pointer">
-<span class="w-12 h-px bg-outline-variant group-hover:bg-primary group-hover:w-16 transition-all duration-300"></span> Requirement Gathering
-                            </li>
-<li class="font-label-lg text-body-lg tracking-wider text-on-surface-variant hover:text-primary transition-all duration-300 flex items-center gap-6 group cursor-pointer">
-<span class="w-12 h-px bg-outline-variant group-hover:bg-primary group-hover:w-16 transition-all duration-300"></span> Site Survey
-                            </li>
-<li class="font-label-lg text-body-lg tracking-wider text-on-surface-variant hover:text-primary transition-all duration-300 flex items-center gap-6 group cursor-pointer">
-<span class="w-12 h-px bg-outline-variant group-hover:bg-primary group-hover:w-16 transition-all duration-300"></span> Budgeting &amp; BOQ
-                            </li>
-<li class="font-label-lg text-body-lg tracking-wider text-on-surface-variant hover:text-primary transition-all duration-300 flex items-center gap-6 group cursor-pointer">
-<span class="w-12 h-px bg-outline-variant group-hover:bg-primary group-hover:w-16 transition-all duration-300"></span> Manufacturing &amp; Installation
-                            </li>
-</ul>
-</div>
-</div>
-<div class="glass-panel p-12 rounded-3xl relative" id="contact">
 
-<h2 class="font-headline-lg text-headline-lg text-primary-fixed mb-6">Bring Your Own Design</h2>
-<p class="font-body-md text-body-lg text-on-surface-variant/90 mb-12 leading-relaxed">Have a vision? We have the tools. Bring your completed designs to us, and our factory will bring them to life with unparalleled precision and quality.</p>
-<form class="space-y-8">
-<div>
-<label class="font-label-sm text-label-lg tracking-widest uppercase text-secondary block mb-3">Name</label>
-<input class="w-full bg-transparent border-b border-outline-variant text-on-surface focus:border-primary focus:ring-0 px-0 py-3 text-lg transition-colors placeholder:text-on-surface-variant/50" placeholder="John Doe" type="text">
+<!-- Gallery Section (Typographic Grid - No Images) -->
+<section class="w-full bg-surface-container-lowest py-section-padding px-margin-mobile md:px-margin-desktop" id="gallery">
+<div class="max-w-[1440px] mx-auto">
+<div class="grid grid-cols-1 md:grid-cols-2 border-t border-l border-outline-variant/30">
+<!-- Item 1 -->
+<div class="reveal-scale group p-12 md:p-16 border-b border-r border-outline-variant/30 hover:bg-surface-container-low transition-colors duration-500 relative overflow-hidden cursor-pointer">
+<span class="absolute top-6 right-8 font-sans text-xs text-on-surface-variant/50">01</span>
+<h3 class="font-serif text-5xl md:text-7xl mb-4 text-transparent crazy-outline group-hover:text-primary-fixed transition-all duration-500">Kitchens</h3>
+<p class="font-sans text-base text-on-surface-variant max-w-md font-light">Precision engineered modular kitchens with premium finishes and smart storage solutions.</p>
+<div class="w-12 h-px bg-primary mt-8 group-hover:w-24 transition-all duration-500"></div>
+</div>
+<!-- Item 2 -->
+<div class="reveal-scale group p-12 md:p-16 border-b border-r border-outline-variant/30 hover:bg-surface-container-low transition-colors duration-500 relative overflow-hidden cursor-pointer">
+<span class="absolute top-6 right-8 font-sans text-xs text-on-surface-variant/50">02</span>
+<h3 class="font-serif text-5xl md:text-7xl mb-4 text-transparent crazy-outline group-hover:text-primary-fixed transition-all duration-500">Wardrobes</h3>
+<p class="font-sans text-base text-on-surface-variant max-w-md font-light">Customized sliding and hinged wardrobes designed to maximize space and aesthetic appeal.</p>
+<div class="w-12 h-px bg-primary mt-8 group-hover:w-24 transition-all duration-500"></div>
+</div>
+<!-- Item 3 -->
+<div class="reveal-scale group p-12 md:p-16 border-b border-r border-outline-variant/30 hover:bg-surface-container-low transition-colors duration-500 relative overflow-hidden cursor-pointer">
+<span class="absolute top-6 right-8 font-sans text-xs text-on-surface-variant/50">03</span>
+<h3 class="font-serif text-5xl md:text-7xl mb-4 text-transparent crazy-outline group-hover:text-primary-fixed transition-all duration-500">Living</h3>
+<p class="font-sans text-base text-on-surface-variant max-w-md font-light">Bespoke living room furniture that combines comfort with sophisticated design language.</p>
+<div class="w-12 h-px bg-primary mt-8 group-hover:w-24 transition-all duration-500"></div>
+</div>
+<!-- Item 4 -->
+<div class="reveal-scale group p-12 md:p-16 border-b border-r border-outline-variant/30 hover:bg-surface-container-low transition-colors duration-500 relative overflow-hidden cursor-pointer">
+<span class="absolute top-6 right-8 font-sans text-xs text-on-surface-variant/50">04</span>
+<h3 class="font-serif text-5xl md:text-7xl mb-4 text-transparent crazy-outline group-hover:text-primary-fixed transition-all duration-500">Storage</h3>
+<p class="font-sans text-base text-on-surface-variant max-w-md font-light">Innovative storage units tailored to your specific spatial requirements and personal style.</p>
+<div class="w-12 h-px bg-primary mt-8 group-hover:w-24 transition-all duration-500"></div>
+</div>
+</div>
+</div>
+</section>
+
+<!-- Services Section -->
+<section class="relative w-full py-section-padding overflow-hidden" id="services">
+<div class="divider-line absolute top-0 left-1/2 -translate-x-1/2 w-full max-w-3xl h-px bg-gradient-to-r from-transparent via-outline-variant to-transparent z-30"></div>
+<div class="absolute inset-0 z-0 opacity-20 bg-cover bg-center parallax-bg hero-parallax" data-alt="A luxurious modern kitchen interior featuring rich walnut wood cabinetry, white marble countertops with subtle grey veining, and sleek brass pendant lights hanging over a central island. Warm, sophisticated lighting." style="background-image: url(&quot;https://lh3.googleusercontent.com/aida-public/AB6AXuAhG_GBKBvHCLSsRUujQVR--b_42U1mMFaV4SF8xbZLG62lzXFozrFQ9ldSL67_IZZOXhFBx_BWE_9Rp9taQuXOlZJIq_PyCY5yJDTBxDMVA5mkBEHUNau5oFupwpPYz0dmRgFS2uLh76jQLWjCZ1LsyRg7jFRXvLk-Vyij_0L2rvMCt3jvtTBYo8krkvG2hPliGTYxqIOceDr7J-RXADJFZs5rccqPmINMRQSB5sftDEcGiqLwwSXcYYqMCl4ITRP98RCnSHbMR38i&quot;); background-size: cover; background-position: center center; background-attachment: fixed;"></div>
+<div class="absolute inset-0 bg-gradient-to-b from-surface-container-lowest via-surface-container-lowest/95 to-surface-container-lowest z-10"></div>
+<div class="relative z-20 max-w-[1440px] mx-auto px-margin-mobile md:px-margin-desktop grid grid-cols-1 lg:grid-cols-2 gap-20 items-center">
+<div class="reveal-left pr-0 lg:pr-10">
+<h2 class="font-serif text-5xl md:text-7xl text-primary mb-16 tracking-tight">Our <span class="italic font-light">Offerings</span></h2>
+<div class="mb-20">
+<h3 class="font-sans text-sm uppercase tracking-[0.2em] text-secondary mb-8 pb-4 border-b border-outline-variant/30">Interior Design Services</h3>
+<ul class="space-y-8">
+<li class="stagger-item group cursor-pointer flex items-baseline gap-6">
+<span class="font-serif text-xl text-primary/50">01</span>
+<span class="font-serif text-3xl md:text-4xl text-on-surface-variant group-hover:text-primary transition-colors duration-300">Space Planning</span>
+</li>
+<li class="stagger-item group cursor-pointer flex items-baseline gap-6">
+<span class="font-serif text-xl text-primary/50">02</span>
+<span class="font-serif text-3xl md:text-4xl text-on-surface-variant group-hover:text-primary transition-colors duration-300">Concept Design</span>
+</li>
+<li class="stagger-item group cursor-pointer flex items-baseline gap-6">
+<span class="font-serif text-xl text-primary/50">03</span>
+<span class="font-serif text-3xl md:text-4xl text-on-surface-variant group-hover:text-primary transition-colors duration-300">3D Visualization</span>
+</li>
+<li class="stagger-item group cursor-pointer flex items-baseline gap-6">
+<span class="font-serif text-xl text-primary/50">04</span>
+<span class="font-serif text-3xl md:text-4xl text-on-surface-variant group-hover:text-primary transition-colors duration-300">Material Selection</span>
+</li>
+</ul>
 </div>
 <div>
-<label class="font-label-sm text-label-lg tracking-widest uppercase text-secondary block mb-3">Email</label>
-<input class="w-full bg-transparent border-b border-outline-variant text-on-surface focus:border-primary focus:ring-0 px-0 py-3 text-lg transition-colors placeholder:text-on-surface-variant/50" placeholder="john@example.com" type="email">
+<h3 class="font-sans text-sm uppercase tracking-[0.2em] text-secondary mb-8 pb-4 border-b border-outline-variant/30">Design-to-Delivery Process</h3>
+<ul class="space-y-8">
+<li class="stagger-item group cursor-pointer flex items-baseline gap-6">
+<span class="font-serif text-xl text-primary/50">01</span>
+<span class="font-serif text-3xl md:text-4xl text-on-surface-variant group-hover:text-primary transition-colors duration-300">Requirement Gathering</span>
+</li>
+<li class="stagger-item group cursor-pointer flex items-baseline gap-6">
+<span class="font-serif text-xl text-primary/50">02</span>
+<span class="font-serif text-3xl md:text-4xl text-on-surface-variant group-hover:text-primary transition-colors duration-300">Site Survey</span>
+</li>
+<li class="stagger-item group cursor-pointer flex items-baseline gap-6">
+<span class="font-serif text-xl text-primary/50">03</span>
+<span class="font-serif text-3xl md:text-4xl text-on-surface-variant group-hover:text-primary transition-colors duration-300">Budgeting &amp; BOQ</span>
+</li>
+<li class="stagger-item group cursor-pointer flex items-baseline gap-6">
+<span class="font-serif text-xl text-primary/50">04</span>
+<span class="font-serif text-3xl md:text-4xl text-on-surface-variant group-hover:text-primary transition-colors duration-300">Manufacturing &amp; Installation</span>
+</li>
+</ul>
 </div>
-<button class="w-full py-5 bg-primary text-on-primary font-label-lg text-label-lg uppercase tracking-widest rounded-full hover:bg-primary-fixed-dim transition-colors mt-8 shadow-lg shadow-primary/20" type="button">
+</div>
+
+<!-- The Form Container -->
+<div class="reveal-right glass-panel p-12 rounded-xl relative" id="contact">
+<div class="absolute -top-4 -right-4 w-24 h-24 bg-primary/20 rounded-full blur-2xl"></div>
+<h2 class="font-serif text-4xl md:text-5xl text-primary-fixed mb-4 tracking-tight">Bring Your <span class="italic font-light">Design</span></h2>
+<p class="font-sans text-base text-on-surface-variant/90 mb-12 leading-relaxed font-light">Have a vision? We have the tools. Bring your completed designs to us, and our factory will bring them to life with unparalleled precision and quality.</p>
+<form class="space-y-8" onsubmit="handleSubmit(event)">
+<div>
+<label class="font-sans text-xs uppercase tracking-[0.2em] text-secondary block mb-3">Name</label>
+<input class="form-input w-full bg-transparent border-b border-outline-variant text-on-surface focus:border-primary focus:ring-0 px-0 py-3 text-lg font-light transition-colors placeholder:text-on-surface-variant/50" placeholder="John Doe" type="text" required>
+</div>
+<div>
+<label class="font-sans text-xs uppercase tracking-[0.2em] text-secondary block mb-3">Email</label>
+<input class="form-input w-full bg-transparent border-b border-outline-variant text-on-surface focus:border-primary focus:ring-0 px-0 py-3 text-lg font-light transition-colors placeholder:text-on-surface-variant/50" placeholder="john@example.com" type="email" required>
+</div>
+<div>
+<label class="font-sans text-xs uppercase tracking-[0.2em] text-secondary block mb-3">Phone</label>
+<input class="form-input w-full bg-transparent border-b border-outline-variant text-on-surface focus:border-primary focus:ring-0 px-0 py-3 text-lg font-light transition-colors placeholder:text-on-surface-variant/50" placeholder="+91 98765 43210" type="tel">
+</div>
+<button class="magnetic-btn w-full py-5 bg-primary text-on-primary font-sans text-sm uppercase tracking-[0.15em] rounded-full hover:bg-primary-fixed-dim transition-colors mt-8 shadow-2xl shadow-black/50" type="submit">
                             Get a free consultation!
                         </button>
 </form>
 </div>
 </div>
 </section>
-</main>
-<!-- Footer -->
-<footer class="bg-surface-container-highest dark:bg-surface-container-highest w-full border-t border-outline-variant/30 transition-all duration-1000 ease-in-out">
-<div class="flex flex-col md:flex-row justify-between items-center py-16 px-margin-mobile md:px-margin-desktop w-full max-w-[1440px] mx-auto gap-10">
-<div class="font-display-lg text-headline-md tracking-[0.2em] uppercase text-primary">
-                KRISTA LIVING
-            </div>
-<div class="flex flex-wrap justify-center gap-8 md:gap-12">
-<a class="font-label-sm text-label-lg tracking-widest uppercase text-on-surface-variant dark:text-on-surface-variant hover:text-primary-fixed-dim transition-all opacity-80 hover:opacity-100" href="#">Privacy Policy</a>
-<a class="font-label-sm text-label-lg tracking-widest uppercase text-on-surface-variant dark:text-on-surface-variant hover:text-primary-fixed-dim transition-all opacity-80 hover:opacity-100" href="#">Terms of Service</a>
-<a class="font-label-sm text-label-lg tracking-widest uppercase text-on-surface-variant dark:text-on-surface-variant hover:text-primary-fixed-dim transition-all opacity-80 hover:opacity-100" href="#contact">Contact Us</a>
-<a class="font-label-sm text-label-lg tracking-widest uppercase text-on-surface-variant dark:text-on-surface-variant hover:text-primary-fixed-dim transition-all opacity-80 hover:opacity-100" href="#manufacturing">Factory Tour</a>
+
+<!-- About Section -->
+<section class="w-full bg-surface py-section-padding px-margin-mobile md:px-margin-desktop relative" id="about">
+<div class="max-w-[1440px] mx-auto">
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-16 lg:gap-24 items-center">
+<div class="reveal-left">
+<div class="inline-flex items-center gap-3 px-5 py-2 border border-secondary/50 rounded-full mb-8 bg-surface-container-low/50">
+<span class="font-sans text-xs uppercase tracking-[0.2em] text-secondary">Our Story</span>
 </div>
-<div class="font-body-md text-label-sm tracking-widest text-secondary/70 dark:text-secondary-fixed/70 text-center md:text-right max-w-xs">
-                © 2024 KRISTA LIVING PVT LTD.<br>WHERE COMFORT MEETS COMMITMENT.
-            </div>
+<h2 class="font-serif text-5xl md:text-7xl text-primary mb-8 tracking-tight">Where <span class="italic font-light">Comfort</span> Meets Commitment</h2>
+<p class="font-sans text-lg text-on-surface-variant mb-6 leading-relaxed font-light">At KRISTA LIVING, we believe that exceptional furniture is born from the perfect marriage of technology and craftsmanship. Our state-of-the-art manufacturing facility is where raw materials transform into pieces of art.</p>
+<p class="font-sans text-lg text-on-surface-variant mb-8 leading-relaxed font-light">From precision cutting to custom finishes, every step of the process is controlled in-house, ensuring unmatched quality and delivery timelines that we stand behind.</p>
+<div class="flex flex-wrap gap-8 mt-12">
+<div class="flex items-center gap-4">
+<div class="w-14 h-14 rounded-full bg-primary-container flex items-center justify-center border border-primary/20">
+<span class="material-symbols-outlined text-primary text-2xl">verified</span>
+</div>
+<div>
+<div class="font-serif text-xl text-primary">Quality</div>
+<div class="font-sans text-xs uppercase tracking-widest text-on-surface-variant">Assured</div>
+</div>
+</div>
+<div class="flex items-center gap-4">
+<div class="w-14 h-14 rounded-full bg-primary-container flex items-center justify-center border border-primary/20">
+<span class="material-symbols-outlined text-primary text-2xl">schedule</span>
+</div>
+<div>
+<div class="font-serif text-xl text-primary">On Time</div>
+<div class="font-sans text-xs uppercase tracking-widest text-on-surface-variant">Delivery</div>
+</div>
+</div>
+<div class="flex items-center gap-4">
+<div class="w-14 h-14 rounded-full bg-primary-container flex items-center justify-center border border-primary/20">
+<span class="material-symbols-outlined text-primary text-2xl">factory</span>
+</div>
+<div>
+<div class="font-serif text-xl text-primary">In-House</div>
+<div class="font-sans text-xs uppercase tracking-widest text-on-surface-variant">Manufacturing</div>
+</div>
+</div>
+</div>
+</div>
+<div class="reveal-right relative">
+<div class="img-reveal rounded-xl overflow-hidden">
+<img src="https://lh3.googleusercontent.com/aida-public/AB6AXuDAMC6VonOBLvtZgu1dxmZe4r2yKeicobtq4eyjWQikBgJx0Xjee9NBWi89JQAREkylhoAB1vX3OFZnC3w673LJeumfXK6lMe8Er_wHPPfTFnye7oiNb40ZvXUtSPqE0NFxmhRDmiobeANchErwLnHi4ewfJ7jBwmevsioojV7Bqgpu7TXyiPg95lOsD2qSdakuehagRdt6P1HViJJxmvml22ZTHJyyeDEZyNm0yQr6Ve7jbP0SZsSJz5bX0mVtGXh7URvlH5hV5mWP" alt="Krista Living interior" class="w-full h-auto"/>
+</div>
+<div class="absolute -bottom-8 -left-8 glass-panel p-8 rounded-xl hidden md:block">
+<div class="font-serif text-5xl text-primary mb-1">100%</div>
+<div class="font-sans text-xs uppercase tracking-widest text-on-surface-variant">In-House Production</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+</main>
+
+<!-- Footer -->
+<footer class="bg-surface-container-highest dark:bg-surface-container-highest w-full border-t border-outline-variant/30">
+<div class="flex flex-col md:flex-row justify-between items-center py-16 px-margin-mobile md:px-margin-desktop w-full max-w-[1440px] mx-auto gap-10">
+<div class="font-serif text-xl tracking-[0.2em] uppercase text-primary cursor-pointer" onclick="scrollToSection('home')">
+            KRISTA LIVING
+        </div>
+<div class="flex flex-wrap justify-center gap-8 md:gap-12">
+<a class="font-sans text-xs uppercase tracking-[0.15em] text-on-surface-variant dark:text-on-surface-variant hover:text-primary-fixed-dim transition-all opacity-80 hover:opacity-100" href="#">Privacy Policy</a>
+<a class="font-sans text-xs uppercase tracking-[0.15em] text-on-surface-variant dark:text-on-surface-variant hover:text-primary-fixed-dim transition-all opacity-80 hover:opacity-100" href="#">Terms of Service</a>
+<a class="font-sans text-xs uppercase tracking-[0.15em] text-on-surface-variant dark:text-on-surface-variant hover:text-primary-fixed-dim transition-all opacity-80 hover:opacity-100" href="#contact" onclick="scrollToForm()">Contact Us</a>
+<a class="font-sans text-xs uppercase tracking-[0.15em] text-on-surface-variant dark:text-on-surface-variant hover:text-primary-fixed-dim transition-all opacity-80 hover:opacity-100" href="#manufacturing" onclick="scrollToSection('manufacturing')">Factory Tour</a>
+</div>
+<div class="font-sans text-xs tracking-widest text-secondary/70 dark:text-secondary-fixed/70 text-center md:text-right max-w-xs">
+            © 2024 KRISTA LIVING PVT LTD.<br>WHERE COMFORT MEETS COMMITMENT.
+        </div>
 </div>
 </footer>
 
+<!-- Back to Top Button -->
+<div id="back-to-top" onclick="scrollToSection('home')">
+<span class="material-symbols-outlined" style="font-size: 28px;">arrow_upward</span>
+</div>
 
+<script>
+    // ===== Loading Screen =====
+    document.addEventListener('DOMContentLoaded', () => {
+        setTimeout(() => {
+            document.getElementById('loader').classList.add('is-hidden');
+        }, 1200);
+    });
 
+    // ===== Perfect Auto Scroll Functions =====
+    function scrollToSection(sectionId) {
+        const section = document.getElementById(sectionId);
+        if (section) {
+            const offset = 80; // Exact offset for navbar height
+            const top = section.getBoundingClientRect().top + window.pageYOffset - offset;
+            window.scrollTo({ top: top, behavior: 'smooth' });
+        }
+    }
 
-</body></html>
+    // Specifically for the form to add the highlight effect
+    function scrollToForm() {
+        const form = document.getElementById('contact');
+        if (form) {
+            const offset = 80;
+            // Center the form perfectly in the viewport
+            const formHeight = form.offsetHeight;
+            const windowHeight = window.innerHeight;
+            let top = form.getBoundingClientRect().top + window.pageYOffset - offset;
+            
+            // If form is smaller than screen, try to center it
+            if (formHeight < windowHeight) {
+                top = top - ((windowHeight - offset - formHeight) / 2);
+            }
+            
+            window.scrollTo({ top: top, behavior: 'smooth' });
+            
+            // Highlight effect
+            setTimeout(() => {
+                form.classList.remove('form-highlight'); // Reset if already there
+                void form.offsetWidth; // Trigger reflow to restart animation
+                form.classList.add('form-highlight');
+            }, 800); // Wait for scroll to finish
+        }
+    }
+
+    // Handle all anchor links with smooth scroll
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function(e) {
+            const href = this.getAttribute('href');
+            if (href && href.length > 1) {
+                e.preventDefault();
+                const targetId = href.substring(1);
+                if (targetId === 'contact') {
+                    scrollToForm();
+                } else {
+                    scrollToSection(targetId);
+                }
+            }
+        });
+    });
+
+    // ===== Scroll Progress Bar =====
+    const scrollProgress = document.getElementById('scroll-progress');
+    window.addEventListener('scroll', () => {
+        const scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
+        const scrollHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+        const progress = (scrollTop / scrollHeight) * 100;
+        scrollProgress.style.width = progress + '%';
+    });
+
+    // ===== Navbar Shrink on Scroll =====
+    const navbar = document.getElementById('navbar');
+    const navInner = navbar.querySelector('.flex');
+    window.addEventListener('scroll', () => {
+        if (window.scrollY > 50) {
+            navInner.classList.add('nav-shrink');
+        } else {
+            navInner.classList.remove('nav-shrink');
+        }
+    });
+
+    // ===== Back to Top Button =====
+    const backToTop = document.getElementById('back-to-top');
+    window.addEventListener('scroll', () => {
+        if (window.scrollY > 600) {
+            backToTop.classList.add('visible');
+        } else {
+            backToTop.classList.remove('visible');
+        }
+    });
+
+    // ===== Mobile Menu =====
+    const menuToggle = document.getElementById('menu-toggle');
+    const menuClose = document.getElementById('menu-close');
+    const mobileMenu = document.getElementById('mobile-menu');
+    const mobileMenuOverlay = document.getElementById('mobile-menu-overlay');
+
+    menuToggle.addEventListener('click', () => {
+        mobileMenu.classList.add('open');
+        mobileMenuOverlay.classList.add('open');
+        document.body.style.overflow = 'hidden';
+    });
+
+    function closeMobileMenu() {
+        mobileMenu.classList.remove('open');
+        mobileMenuOverlay.classList.remove('open');
+        document.body.style.overflow = '';
+    }
+
+    menuClose.addEventListener('click', closeMobileMenu);
+    mobileMenuOverlay.addEventListener('click', closeMobileMenu);
+
+    // ===== Intersection Observer for Reveal Animations =====
+    const observerOptions = {
+        threshold: 0.15,
+        rootMargin: '0px 0px -80px 0px'
+    };
+
+    const revealObserver = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('active');
+            }
+        });
+    }, observerOptions);
+
+    // Observe all reveal elements
+    document.querySelectorAll('.reveal, .reveal-left, .reveal-right, .reveal-scale, .stagger-item, .img-reveal, .divider-line').forEach(el => {
+        revealObserver.observe(el);
+    });
+
+    // Stagger items with delay
+    document.querySelectorAll('.stagger-item').forEach((item, index) => {
+        const parent = item.closest('ul, .grid');
+        if (parent) {
+            const siblings = Array.from(parent.querySelectorAll('.stagger-item'));
+            const idx = siblings.indexOf(item);
+            item.style.transitionDelay = (idx * 0.1) + 's';
+        }
+    });
+
+    // ===== Parallax Effect =====
+    const parallaxElements = document.querySelectorAll('.parallax-bg');
+    window.addEventListener('scroll', () => {
+        const scrolled = window.pageYOffset;
+        parallaxElements.forEach(el => {
+            const speed = 0.4;
+            const rect = el.getBoundingClientRect();
+            const sectionTop = rect.top + scrolled;
+            const offset = (scrolled - sectionTop) * speed;
+            if (rect.bottom > 0 && rect.top < window.innerHeight) {
+                el.style.transform = `translateY(${offset * 0.3}px)`;
+            }
+        });
+    });
+
+    // ===== Counter Animation =====
+    const counterObserver = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                const counter = entry.target;
+                const target = parseInt(counter.getAttribute('data-target'));
+                const duration = 2000;
+                const step = target / (duration / 16);
+                let current = 0;
+
+                const updateCounter = () => {
+                    current += step;
+                    if (current < target) {
+                        if (target >= 1000) {
+                            counter.textContent = Math.floor(current).toLocaleString();
+                        } else {
+                            counter.textContent = Math.floor(current);
+                        }
+                        requestAnimationFrame(updateCounter);
+                    } else {
+                        if (target >= 1000) {
+                            counter.textContent = target.toLocaleString() + '+';
+                        } else {
+                            counter.textContent = target + (target === 100 ? '%' : '+');
+                        }
+                    }
+                };
+
+                updateCounter();
+                counterObserver.unobserve(counter);
+            }
+        });
+    }, { threshold: 0.5 });
+
+    document.querySelectorAll('.counter').forEach(counter => {
+        counterObserver.observe(counter);
+    });
+
+    // ===== Active Nav Link on Scroll =====
+    const sections = document.querySelectorAll('section[id]');
+    const navLinks = document.querySelectorAll('.nav-link');
+
+    const navObserver = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                const id = entry.target.getAttribute('id');
+                navLinks.forEach(link => {
+                    link.classList.remove('active');
+                    if (link.getAttribute('data-section') === id) {
+                        link.classList.add('active');
+                    }
+                });
+            }
+        });
+    }, { threshold: 0.3, rootMargin: '-100px 0px -50% 0px' });
+
+    sections.forEach(section => navObserver.observe(section));
+
+    // ===== Magnetic Button Effect =====
+    document.querySelectorAll('.magnetic-btn').forEach(btn => {
+        btn.addEventListener('mousemove', (e) => {
+            const rect = btn.getBoundingClientRect();
+            const x = e.clientX - rect.left - rect.width / 2;
+            const y = e.clientY - rect.top - rect.height / 2;
+            btn.style.transform = `translate(${x * 0.15}px, ${y * 0.15}px)`;
+        });
+        btn.addEventListener('mouseleave', () => {
+            btn.style.transform = 'translate(0, 0)';
+        });
+    });
+
+    // ===== Form Submit =====
+    function handleSubmit(e) {
+        e.preventDefault();
+        const btn = e.target.querySelector('button[type="submit"]');
+        const originalText = btn.textContent.trim();
+        btn.textContent = 'Sending...';
+        btn.style.opacity = '0.7';
+        setTimeout(() => {
+            btn.textContent = '✓ Request Received!';
+            btn.style.background = '#4d3325';
+            setTimeout(() => {
+                btn.textContent = originalText;
+                btn.style.opacity = '1';
+                btn.style.background = '';
+                e.target.reset();
+            }, 3000);
+        }, 1500);
+    }
+
+    // ===== Re-run observer for dynamically loaded content =====
+    setTimeout(() => {
+        document.querySelectorAll('.reveal:not(.active), .reveal-left:not(.active), .reveal-right:not(.active), .reveal-scale:not(.active), .stagger-item:not(.active)').forEach(el => {
+            revealObserver.observe(el);
+        });
+    }, 100);
+
+    // ===== Prevent body scroll when mobile menu is open =====
+    document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape' && mobileMenu.classList.contains('open')) {
+            closeMobileMenu();
+        }
+    });
+</script>
+
+</body>
+</html>
