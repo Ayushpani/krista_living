@@ -348,7 +348,7 @@
     /* ===== Scroll Down Indicator ===== */
     .scroll-indicator {
         position: absolute;
-        bottom: 40px;
+        bottom: 30px;
         left: 50%;
         transform: translateX(-50%);
         z-index: 20;
@@ -460,24 +460,24 @@
 
 <main>
 <!-- Hero Section -->
-<section class="relative w-full min-h-[100vh] flex items-center justify-center overflow-hidden pt-24" id="home">
+<section class="relative w-full min-h-screen flex items-center overflow-hidden pt-32 pb-20" id="home">
 <div class="absolute inset-0 z-0 bg-cover bg-center parallax-bg hero-parallax" data-alt="A luxurious, modern living room interior featuring deep rich wood paneling on the walls, a plush beige sofa with textured cushions, and warm ambient lighting from elegant lamps and recessed ceiling lights. A large dark coffee table sits on a soft textured rug. High-end, sophisticated aesthetic." style="background-image: url(&quot;https://lh3.googleusercontent.com/aida-public/AB6AXuDAMC6VonOBLvtZgu1dxmZe4r2yKeicobtq4eyjWQikBgJx0Xjee9NBWi89JQAREkylhoAB1vX3OFZnC3w673LJeumfXK6lMe8Er_wHPPfTFnye7oiNb40ZvXUtSPqE0NFxmhRDmiobeANchErwLnHi4ewfJ7jBwmevsioojV7Bqgpu7TXyiPg95lOsD2qSdakuehagRdt6P1HViJJxmvml22ZTHJyyeDEZyNm0yQr6Ve7jbP0SZsSJz5bX0mVtGXh7URvlH5hV5mWP&quot;); background-attachment: fixed; background-size: cover; background-position: center center;"></div>
 <div class="absolute inset-0 bg-gradient-to-r from-surface-container-lowest via-surface-container-lowest/80 to-surface-container-lowest/30 z-10"></div>
 <div class="absolute inset-0 bg-gradient-to-t from-surface via-transparent to-transparent z-10"></div>
-<div class="relative z-20 w-full max-w-[1440px] mx-auto px-margin-mobile md:px-margin-desktop py-section-padding">
+<div class="relative z-20 w-full max-w-[1440px] mx-auto px-margin-mobile md:px-margin-desktop">
 <div class="max-w-4xl">
-<div class="hero-fade hero-fade-1 inline-flex items-center gap-3 px-5 py-2 border border-secondary/50 rounded-full mb-12 bg-surface/30 backdrop-blur-sm">
+<div class="hero-fade hero-fade-1 inline-flex items-center gap-3 px-5 py-2 border border-secondary/50 rounded-full mb-8 bg-surface/30 backdrop-blur-sm">
 <span class="font-sans text-xs uppercase tracking-[0.2em] text-secondary">Modular | Furniture | Factory</span>
 </div>
-<h1 class="hero-fade hero-fade-2 font-serif text-5xl md:text-8xl lg:text-9xl text-primary-fixed mb-8 leading-[0.95] tracking-tight">
+<h1 class="hero-fade hero-fade-2 font-serif text-5xl md:text-6xl lg:text-7xl text-primary-fixed mb-6 leading-[1.1] tracking-tight">
     In-House<br>
     <span class="italic font-light">Modular</span> <span class="crazy-outline">Furniture</span><br>
     Manufacturing
 </h1>
-<p class="hero-fade hero-fade-3 font-sans text-lg md:text-xl text-on-surface-variant mb-12 max-w-2xl leading-relaxed font-light">Fully equipped factory with routers, edge banders, spray area &amp; assembly lines. We manufacture customised modular kitchens, wardrobes &amp; storage units with premium finishes.</p>
+<p class="hero-fade hero-fade-3 font-sans text-base md:text-xl text-on-surface-variant mb-10 max-w-2xl leading-relaxed font-light">Fully equipped factory with routers, edge banders, spray area &amp; assembly lines. We manufacture customised modular kitchens, wardrobes &amp; storage units with premium finishes.</p>
 <div class="hero-fade hero-fade-4 flex flex-wrap gap-6">
-<a class="magnetic-btn px-10 py-5 bg-primary text-on-primary font-sans text-sm uppercase tracking-[0.15em] rounded-full hover:bg-primary-fixed-dim transition-all duration-300 text-center cursor-pointer" onclick="scrollToForm()">Book Free Consultation</a>
-<a class="magnetic-btn px-10 py-5 border border-secondary/50 text-secondary font-sans text-sm uppercase tracking-[0.15em] rounded-full hover:bg-surface-container-low transition-all duration-300 text-center cursor-pointer" onclick="scrollToSection('manufacturing')">View Capabilities</a>
+<a class="magnetic-btn px-10 py-4 bg-primary text-on-primary font-sans text-sm uppercase tracking-[0.15em] rounded-full hover:bg-primary-fixed-dim transition-all duration-300 text-center cursor-pointer" onclick="scrollToForm()">Book Free Consultation</a>
+<a class="magnetic-btn px-10 py-4 border border-secondary/50 text-secondary font-sans text-sm uppercase tracking-[0.15em] rounded-full hover:bg-surface-container-low transition-all duration-300 text-center cursor-pointer" onclick="scrollToSection('manufacturing')">View Capabilities</a>
 </div>
 </div>
 </div>
@@ -490,22 +490,22 @@
 </section>
 
 <!-- Stats Bar -->
-<section class="w-full bg-surface-container-lowest border-y border-outline-variant/20 py-24">
-<div class="max-w-[1440px] mx-auto px-margin-mobile md:px-margin-desktop grid grid-cols-2 md:grid-cols-4 gap-8 md:gap-12">
+<section class="w-full bg-surface-container-lowest border-y border-outline-variant/20 py-20">
+<div class="max-w-[1440px] mx-auto px-margin-mobile md:px-margin-desktop grid grid-cols-2 md:grid-cols-4 gap-10 md:gap-16">
 <div class="reveal text-left stagger-item">
-<div class="counter font-serif text-6xl md:text-8xl font-thin text-primary mb-2" data-target="500">0</div>
+<div class="counter font-serif text-5xl md:text-7xl font-normal text-primary mb-4 leading-tight" data-target="500">0</div>
 <div class="font-sans text-xs uppercase tracking-[0.2em] text-on-surface-variant">Projects Delivered</div>
 </div>
 <div class="reveal text-left stagger-item">
-<div class="counter font-serif text-6xl md:text-8xl font-thin text-primary mb-2" data-target="12">0</div>
+<div class="counter font-serif text-5xl md:text-7xl font-normal text-primary mb-4 leading-tight" data-target="12">0</div>
 <div class="font-sans text-xs uppercase tracking-[0.2em] text-on-surface-variant">Years Experience</div>
 </div>
 <div class="reveal text-left stagger-item">
-<div class="counter font-serif text-6xl md:text-8xl font-thin text-primary mb-2" data-target="25000">0</div>
+<div class="counter font-serif text-5xl md:text-7xl font-normal text-primary mb-4 leading-tight" data-target="25000">0</div>
 <div class="font-sans text-xs uppercase tracking-[0.2em] text-on-surface-variant">Sq Ft Factory</div>
 </div>
 <div class="reveal text-left stagger-item">
-<div class="counter font-serif text-6xl md:text-8xl font-thin text-primary mb-2" data-target="100">0</div>
+<div class="counter font-serif text-5xl md:text-7xl font-normal text-primary mb-4 leading-tight" data-target="100">0</div>
 <div class="font-sans text-xs uppercase tracking-[0.2em] text-on-surface-variant">% In-House</div>
 </div>
 </div>
@@ -649,18 +649,18 @@
 </div>
 
 <!-- The Form Container -->
-<div class="reveal-right glass-panel p-12 rounded-xl relative" id="contact">
+<div class="reveal-right glass-panel p-12 rounded-xl relative lg:ml-10" id="contact">
 <div class="absolute -top-4 -right-4 w-24 h-24 bg-primary/20 rounded-full blur-2xl"></div>
 <h2 class="font-serif text-4xl md:text-5xl text-primary-fixed mb-4 tracking-tight">Bring Your <span class="italic font-light">Design</span></h2>
 <p class="font-sans text-base text-on-surface-variant/90 mb-12 leading-relaxed font-light">Have a vision? We have the tools. Bring your completed designs to us, and our factory will bring them to life with unparalleled precision and quality.</p>
 <form class="space-y-8" onsubmit="handleSubmit(event)">
 <div>
 <label class="font-sans text-xs uppercase tracking-[0.2em] text-secondary block mb-3">Name</label>
-<input class="form-input w-full bg-transparent border-b border-outline-variant text-on-surface focus:border-primary focus:ring-0 px-0 py-3 text-lg font-light transition-colors placeholder:text-on-surface-variant/50" placeholder="John Doe" type="text" required>
+<input class="form-input w-full bg-transparent border-b border-outline-variant text-on-surface focus:border-primary focus:ring-0 px-0 py-3 text-lg font-light transition-colors placeholder:text-on-surface-variant/50" placeholder="Aarav Sharma" type="text" required>
 </div>
 <div>
 <label class="font-sans text-xs uppercase tracking-[0.2em] text-secondary block mb-3">Email</label>
-<input class="form-input w-full bg-transparent border-b border-outline-variant text-on-surface focus:border-primary focus:ring-0 px-0 py-3 text-lg font-light transition-colors placeholder:text-on-surface-variant/50" placeholder="john@example.com" type="email" required>
+<input class="form-input w-full bg-transparent border-b border-outline-variant text-on-surface focus:border-primary focus:ring-0 px-0 py-3 text-lg font-light transition-colors placeholder:text-on-surface-variant/50" placeholder="aarav.sharma@example.com" type="email" required>
 </div>
 <div>
 <label class="font-sans text-xs uppercase tracking-[0.2em] text-secondary block mb-3">Phone</label>
